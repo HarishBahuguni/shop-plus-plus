@@ -35,7 +35,7 @@ This is a capstone project for an e-commerce website built using the MERN stack 
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/shop-plus-plus.git
+    git clone https://github.com/HarishBahuguni/shop-plus-plus.git
     ```
 
 2.  **Navigate to the Project Directory:**
