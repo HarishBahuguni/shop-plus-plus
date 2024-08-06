@@ -134,8 +134,8 @@ async function getSalesData(startDate, endDate) {
   // Create a Map to store sales data and num of orders by date
 
   const salesMap = new Map();
-  totalSales = 0;
-  totalNumOrders = 0;
+  let totalSales = 0;
+  let totalNumOrders = 0;
 
   salesData.forEach((entry) => {
     const date = entry?._id.date;
