@@ -1,8 +1,6 @@
 # ShopPlusPlus E-Commerce Website
 
-## Deployment
-
-You can view the live application here - [ShopPlusPlus](https://your-deployment-url.com).
+### You can view the live application here - [ShopPlusPlus](https://your-deployment-url.com).
 
 ## Overview
 
@@ -34,7 +32,63 @@ This is a capstone project for an e-commerce website built using the MERN stack 
 
 ### Setup
 
-1. **Clone the Repository:**
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/your-username/shop-plus-plus.git
+    ```
+
+2.  **Navigate to the Project Directory:**
+
+    ```bash
+    cd shop-plus-plus
+    ```
+
+3.  **Install Backend Dependencies:**
+
+    Navigate to the `backend` directory and install the necessary dependencies:
+
+    ```bash
+    cd backend
+    npm install
+    ```
+
+4.  **Install Frontend Dependencies:**
+
+    Navigate to the `frontend` directory and install the necessary dependencies:
+
+    ```bash
+    cd ../frontend
+    npm install
+    ```
+
+5.  **Set Up Environment Variables:**
+
+    Create a `.env` file in the `backend` directory and add the following environment variables:
+
+    ```env
+    MONGO_URI=your-mongodb-uri
+    JWT_SECRET=your-jwt-secret
+    STRIPE_SECRET_KEY=your-stripe-secret-key
+    CLOUDINARY_API_KEY=your-cloudinary-api-key
+    CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+    ```
+
+6.  **Run the Backend Server:**
+
+    Navigate back to the `backend` directory and start the server:
+
+    ```bash
+    npm start
+    ```
+
+7.  **Run the Frontend Application:**
+
+    Navigate to the `frontend` directory and start the development server:
+
+    ```bash
+    npm start
+    ```
 
 ## Usage
 

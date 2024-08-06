@@ -81,7 +81,7 @@ nav {
 
 /* Home Page Styles */
 #products_heading {
-  margin-top: 1.8rem;
+  margin-top: 1.4rem;
 }
 
 .card {
@@ -109,6 +109,7 @@ nav {
 .card-img-top {
   width: 200px;
   height: 150px;
+  object-fit: contain;
 }
 
 .ratings {
@@ -174,7 +175,7 @@ footer {
 }
 
 #product_image {
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 
 /* Loader Styles */

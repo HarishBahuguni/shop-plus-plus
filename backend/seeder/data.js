@@ -1,5 +1,65 @@
 export default [
   {
+    name: "Apple iPhone 14 - 128GB - Midnight",
+    price: 799.99,
+    description:
+      "The Apple iPhone 14 features a 6.1-inch Super Retina XDR display with Ceramic Shield. Powered by the A15 Bionic chip, it offers exceptional performance and efficiency. It boasts a dual-camera system with a 12MP main camera and an ultra-wide camera for stunning photos and videos. The iPhone 14 also includes a 12MP TrueDepth front camera with Night mode and 4K Dolby Vision HDR recording. With 128GB of storage and a sleek Midnight color, it combines style and functionality with the latest iOS experience.",
+    ratings: 4.7,
+    images: [
+      {
+        public_id: "image-nvgxcb_qtf9r2.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949386/image-nvgxcb_qtf9r2.jpg",
+      },
+      {
+        public_id: "image-fgfhsa_wkvywx.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949369/image-fgfhsa_wkvywx.jpg",
+      },
+      {
+        public_id: "image-hxcvsdf_k2srxl.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949376/image-hxcvsdf_k2srxl.jpg",
+      },
+      {
+        public_id: "image-fgdfgds_xukree.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949366/image-fgdfgds_xukree.jpg",
+      },
+    ],
+    category: "Electronics",
+    seller: "Apple Store",
+    stock: 30,
+    numOfReviews: 52,
+    reviews: [],
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 256GB - Phantom Black",
+    price: 1199.99,
+    description:
+      "The Samsung Galaxy S23 Ultra features a stunning 6.8-inch Dynamic AMOLED 2X display with a 120Hz refresh rate and 1440 x 3088 pixels resolution. It is powered by the Snapdragon 8 Gen 2 processor and offers 256GB of storage with 12GB of RAM. The phone includes a quad-camera system with a 200MP main camera, 12MP ultra-wide, 10MP periscope telephoto, and 10MP telephoto lenses. It also comes with a 12MP front camera for selfies and video calls. The sleek Phantom Black color adds a touch of elegance.",
+    ratings: 4.6,
+    images: [
+      {
+        public_id: "image-gndsad_xbp5mc.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949371/image-gndsad_xbp5mc.jpg",
+      },
+      {
+        public_id: "image-xcxsww_tquypl.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949399/image-xcxsww_tquypl.jpg",
+      },
+      {
+        public_id: "image-nvdfeef_slx8t3.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949384/image-nvdfeef_slx8t3.jpg",
+      },
+      {
+        public_id: "image-ffsdgwe_nrtksb.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949365/image-ffsdgwe_nrtksb.jpg",
+      },
+    ],
+    category: "Electronics",
+    seller: "Samsung Store",
+    stock: 25,
+    numOfReviews: 45,
+    reviews: [],
+  },
+  {
     name: "SanDisk Ultra 128GB SDXC UHS-I Memory Card up to 80MB/s",
     price: 45.89,
     description:
@@ -7,16 +67,16 @@ export default [
     ratings: 4.5,
     images: [
       {
-        public_id: "shopit/demo/nkkjkta63uiazppzkmjf",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577488/shopit/demo/nkkjkta63uiazppzkmjf.jpg",
+        public_id: "image-xvdwff_xxlat0.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949402/image-xvdwff_xxlat0.jpg",
       },
       {
-        public_id: "shopit/demo/hz1iwdqzrvxtfxincvju",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577488/shopit/demo/hz1iwdqzrvxtfxincvju.jpg",
+        public_id: "image-xincvju_k26vfi.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949401/image-xincvju_k26vfi.jpg",
       },
       {
-        public_id: "shopit/demo/oc2dvvkxyxukc13y9pjv",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577488/shopit/demo/oc2dvvkxyxukc13y9pjv.jpg",
+        public_id: "image-ppzkmjf_mml5gx.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949389/image-ppzkmjf_mml5gx.jpg",
       },
     ],
     category: "Electronics",
@@ -26,120 +86,122 @@ export default [
     reviews: [],
   },
   {
-    name: "CAN USB FD Adapter (GC-CAN-USB-FD)",
-    price: 315,
+    name: "Apple MacBook Pro M2 - 14 Inch - Space Gray",
+    price: 1999.99,
     description:
-      "Monitor a CAN network, write a CAN program and communicate with industrial, medical, automotive or other CAN based device. Connect CAN FD and CAN networks to a computer via USB with the CAN USB FD adapter.",
-    ratings: 1.65,
+      "The Apple MacBook Pro M2 features a 14-inch Liquid Retina XDR display, Apple M2 chip with 8-core CPU and 10-core GPU, 16GB unified memory, and 512GB SSD. It offers enhanced performance for demanding tasks, long battery life, and a sleek Space Gray finish.",
+    ratings: 4.9,
     images: [
       {
-        public_id: "shopit/demo/e3hweb3tbp5zacfi564c",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577509/shopit/demo/e3hweb3tbp5zacfi564c.jpg",
+        public_id: "image-werrsd_pgqpru.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949399/image-werrsd_pgqpru.jpg",
       },
       {
-        public_id: "shopit/demo/mjcc0kg0lzxegrauh8qc",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577509/shopit/demo/mjcc0kg0lzxegrauh8qc.jpg",
+        public_id: "image-efefesx_nkfijv.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949363/image-efefesx_nkfijv.jpg",
       },
       {
-        public_id: "shopit/demo/iruzmpgrhb6xyqheppxg",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577509/shopit/demo/iruzmpgrhb6xyqheppxg.jpg",
+        public_id: "image-ddfs33_gzvlga.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949359/image-ddfs33_gzvlga.jpg",
       },
       {
-        public_id: "shopit/demo/bj3auijqcxxvkwdohznb",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577510/shopit/demo/bj3auijqcxxvkwdohznb.jpg",
+        public_id: "image-nfsdfe_vavhrf.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949380/image-nfsdfe_vavhrf.jpg",
       },
     ],
-    category: "Electronics",
-    seller: "Amazon",
-    stock: 0,
+    category: "Laptops",
+    seller: "Apple Store",
+    stock: 25,
+    numOfReviews: 70,
+    reviews: [],
+  },
+  {
+    name: "Dell XPS 13 - Intel Core i7 - 16GB RAM - 512GB SSD",
+    price: 1399.99,
+    description:
+      "The Dell XPS 13 is a compact and powerful laptop featuring an Intel Core i7 processor, 16GB of RAM, and a 512GB SSD. It boasts a 13.4-inch InfinityEdge display with a virtually borderless design, offering stunning visuals and performance in a sleek and portable package.",
+    ratings: 4,
+    images: [
+      {
+        public_id: "image-ngdhg_zekqvp.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949382/image-ngdhg_zekqvp.jpg",
+      },
+      {
+        public_id: "image-sgregv_m67cvc.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949393/image-sgregv_m67cvc.jpg",
+      },
+      {
+        public_id: "image-cbrgeg_woncis.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949357/image-cbrgeg_woncis.jpg",
+      },
+      {
+        public_id: "image-sdfdge_foblcg.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949391/image-sdfdge_foblcg.jpg",
+      },
+    ],
+    category: "Laptops",
+    seller: "Dell Store",
+    stock: 20,
+    numOfReviews: 60,
+    reviews: [],
+  },
+  {
+    name: "Bose QuietComfort Ultra Wireless Noise Cancelling Over-Ear Headphones",
+    price: 349.99,
+    description:
+      "The Bose QuietComfort Ultra Wireless Noise Cancelling Over-Ear Headphones deliver superior sound with advanced noise cancellation and spatial audio technology. Featuring up to 24 hours of battery life and a comfortable over-the-ear design, these headphones provide an immersive listening experience. The limited edition Sandstone color adds a touch of elegance to the high-performance audio experience.",
+    ratings: 4.3,
+    images: [
+      {
+        public_id: "image-dvdgww_ref2vk.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949362/image-dvdgww_ref2vk.jpg",
+      },
+      {
+        public_id: "image-fgdqbh_mfj6br.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949368/image-fgdqbh_mfj6br.jpg",
+      },
+      {
+        public_id: "image-hntger_syjck0.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949374/image-hntger_syjck0.jpg",
+      },
+      {
+        public_id: "image-wefed_cmifnm.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949397/image-wefed_cmifnm.jpg",
+      },
+    ],
+    category: "Headphones",
+    seller: "Bose",
+    stock: 10,
     numOfReviews: 2,
     reviews: [],
   },
   {
-    name: "CHARMOUNT Full Motion TV Wall Mount Swivel",
-    price: 26.99,
+    name: "Sony WH-CH520 Wireless On-Ear Bluetooth Headphones with Mic - Blue",
+    price: 129.99,
     description:
-      "CHARMOUNT TV MOUNT UNIVERSAL DESIGN - Has your TV been received? Tilted TV wall mount is for 26 - 55 TVs weight up to 88lbs 40 kg. Our tilt TV mount has a compatible faceplate that fits VESA 75X75mm (3x3). CHARMOUNT TV MOUNT UNIVERSAL DESIGN - Has your TV been received? Tilted TV wall mount is for 26 - 55 TVs weight up to 88lbs 40 kg. Our tilt TV mount has a compatible faceplate that fits VESA 75X75mm (3x3) CHARMOUNT TV MOUNT UNIVERSAL DESIGN - Has your TV been received? Tilted TV wall mount is for 26 - 55 TVs weight up to 88lbs 40 kg. Our tilt TV mount has a compatible faceplate that fits VESA 75X75mm (3x3).",
-    ratings: 3.5,
+      "The Sony WH-CH520 Wireless On-Ear Bluetooth Headphones offer up to 50 hours of playtime and feature DSEE Upscale technology for enhanced sound quality. With multipoint connectivity and dual pairing, you can easily switch between devices. Voice assistant app support adds convenience for mobile phone users. The stylish blue color complements its sleek design and advanced features.",
+    ratings: 4,
     images: [
       {
-        public_id: "shopit/demo/yqqwxrgst2pi3frtngaw",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577531/shopit/demo/yqqwxrgst2pi3frtngaw.jpg",
+        public_id: "image-z5rbbc_ysc1u9.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949403/image-z5rbbc_ysc1u9.png",
       },
       {
-        public_id: "shopit/demo/pgcwny8xyshsnwaiikbm",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577531/shopit/demo/pgcwny8xyshsnwaiikbm.jpg",
+        public_id: "image-z5rbz_cibh3t.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949406/image-z5rbz_cibh3t.png",
+      },
+      {
+        public_id: "image-z5rbn_jewe3u.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949405/image-z5rbn_jewe3u.png",
+      },
+      {
+        public_id: "image-ncbrey_zrhefw.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949379/image-ncbrey_zrhefw.png",
       },
     ],
     category: "Electronics",
-    seller: "Amazon",
-    stock: 1,
-    numOfReviews: 12,
-    reviews: [],
-  },
-  {
-    name: "Bose QuietComfort 35 II Wireless Bluetooth Headphones",
-    price: 299,
-    description:
-      "What happens when you clear away the noisy distractions of the world? Concentration goes to the next level. You get deeper into your music, your work, or whatever you want to focus on. That’s the power of Bose QuietComfort 35 wireless headphones II. Put them on and get closer to what you’re most passionate about. And that’s just the beginning. QuietComfort 35 wireless headphones II are now enabled with Bose AR",
-    ratings: 4.5,
-    images: [
-      {
-        public_id: "shopit/demo/yxbrklp7snr7dgxfrxu9",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577543/shopit/demo/yxbrklp7snr7dgxfrxu9.jpg",
-      },
-      {
-        public_id: "shopit/demo/i8ge1ilin2fz9tk2okni",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577543/shopit/demo/i8ge1ilin2fz9tk2okni.jpg",
-      },
-    ],
-    category: "Headphones",
-    seller: "Amazon",
-    stock: 11,
-    numOfReviews: 112,
-    reviews: [],
-  },
-  {
-    name: "Apple AirPods with Charging Case (Wired)",
-    price: 126.99,
-    description:
-      "AirPods with Charging Case: More than 24 hours listening time, up to 18 hours talk time; AirPods (single charge): Up to 5 hours listening time, up to 3 hours talk time or 15 minutes in the case equals up to 3 hours listening time or up to 2 hours talk time.",
-    ratings: 4.8,
-    images: [
-      {
-        public_id: "shopit/demo/yj00oalanbzmbzctsbln",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577557/shopit/demo/yj00oalanbzmbzctsbln.jpg",
-      },
-      {
-        public_id: "shopit/demo/mijzcdd5sle8a2any1i8",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577557/shopit/demo/mijzcdd5sle8a2any1i8.jpg",
-      },
-      {
-        public_id: "shopit/demo/kxckb0o7fbdwqgmugoct",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577557/shopit/demo/kxckb0o7fbdwqgmugoct.jpg",
-      },
-    ],
-    category: "Electronics",
-    seller: "Amazon",
-    stock: 122,
-    numOfReviews: 2671,
-    reviews: [],
-  },
-  {
-    name: "Cable Boom Microphone - Volume Control for Playstation PS4 or Xbox",
-    price: 27.99,
-    description:
-      "DESIGN INFO - 3.5mm male to 2.5mm male audio cable adapter with Upgraded Flexible, Detachable Boom Mic which also enables rotary Volume Control and Mute Switch. SteelFlex Arm for perfect microphone positioning. INPUT COMPATIBILITY - Devices supporting 3.5mm audio output such as gaming PS4 / Xbox One controller, PC, Laptop, iPhone and Android Phone.",
-    ratings: 4.1,
-    images: [
-      {
-        public_id: "shopit/demo/xmndneguqtrcutpf9wcz",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577572/shopit/demo/xmndneguqtrcutpf9wcz.jpg",
-      },
-    ],
-    category: "Accessories",
-    seller: "Amazon",
-    stock: 1123,
+    seller: "Sony",
+    stock: 8,
     numOfReviews: 6,
     reviews: [],
   },
@@ -151,16 +213,16 @@ export default [
     ratings: 4.7,
     images: [
       {
-        public_id: "shopit/demo/q6ybe84qlkzwet9qwptz",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577585/shopit/demo/q6ybe84qlkzwet9qwptz.jpg",
+        public_id: "image-q6ybezx_kodzcg.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949391/image-q6ybezx_kodzcg.jpg",
       },
       {
-        public_id: "shopit/demo/niqqio1faynnscubkkmd",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577585/shopit/demo/niqqio1faynnscubkkmd.jpg",
+        public_id: "image-niqqio_nfirfz.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949383/image-niqqio_nfirfz.jpg",
       },
       {
-        public_id: "shopit/demo/dy3nhjgsdgqcnrwf8u2h",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577585/shopit/demo/dy3nhjgsdgqcnrwf8u2h.jpg",
+        public_id: "image-gsdgqc_g9nn0v.jpg",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949373/image-gsdgqc_g9nn0v.jpg",
       },
     ],
     category: "Cameras",
@@ -170,51 +232,50 @@ export default [
     reviews: [],
   },
   {
-    name: "Apple MacBook Air (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray",
-    price: 949.99,
+    name: "Nike Air Zoom Pegasus 39 - Running Shoes",
+    price: 129.99,
     description:
-      "Stunning 13.3-inch Retina display with True Tone technology, Backlit Magic Keyboard and Touch ID, Tenth-generation, Intel Core i3 processor, Intel Iris Plus Graphics, Fast SSD storage, 8GB of memory, Stereo speakers with wider stereo sound",
-    ratings: 4.9,
+      "The Nike Air Zoom Pegasus 39 offers a blend of cushioning and responsiveness for a comfortable run. Featuring a breathable mesh upper and Nike React foam midsole for smooth transitions, these running shoes are designed to support you on every mile. The Zoom Air units in the heel and forefoot deliver a soft and responsive feel, while the updated traction pattern ensures grip on various surfaces. Available in multiple sizes and colors.",
+    ratings: 4.4,
     images: [
       {
-        public_id: "shopit/demo/jzqaj98nnhy0hcsilx9y",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577597/shopit/demo/jzqaj98nnhy0hcsilx9y.jpg",
+        public_id: "image-dfh4er_i84yfs.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949361/image-dfh4er_i84yfs.png",
       },
       {
-        public_id: "shopit/demo/welkq4dgfi5267usmj0n",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577597/shopit/demo/welkq4dgfi5267usmj0n.jpg",
-      },
-      {
-        public_id: "shopit/demo/pabtjloyzenmr6z8klcr",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577600/shopit/demo/pabtjloyzenmr6z8klcr.jpg",
+        public_id: "image-dcvbsb_e0phn6.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949359/image-dcvbsb_e0phn6.png",
       },
     ],
-    category: "Laptops",
-    seller: "Amazon",
-    stock: 0,
-    numOfReviews: 56,
+    category: "Sports",
+    seller: "Nike",
+    stock: 60,
+    numOfReviews: 29,
     reviews: [],
   },
   {
-    name: "Kauffman Orchards Homegrown McIntosh Apples",
-    price: 2.75,
-    description:
-      "McIntosh is a pretty red/green apple with white flesh Homegrown in Kauffman's orchard in healthy Lancaster County soil McIntosh apples are famous for snacking, pies, salads, and applesauce Protected with soft, high-density foam for safe shipping to your door Not for sale to California, Oregon, or Washington due to state laws governing fresh produce",
-    ratings: 5,
+    name: "Fuji Apples - 1kg",
+    price: 4.99,
+    description: "Crisp and juicy Fuji apples with a sweet flavor. Sold in a 1kg bag, perfect for snacking or cooking.",
+    ratings: 4.1,
     images: [
       {
-        public_id: "shopit/demo/mq0zpyzmzqokphs9m9we",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577619/shopit/demo/mq0zpyzmzqokphs9m9we.jpg",
+        public_id: "image-mdfb_wy05fl.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949379/image-mdfb_wy05fl.png",
       },
       {
-        public_id: "shopit/demo/pkyy8rifxpesiwpy23kk",
-        url: "http://res.cloudinary.com/udemy-courses/image/upload/v1698577619/shopit/demo/pkyy8rifxpesiwpy23kk.jpg",
+        public_id: "image-vcwefef_apqovl.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949394/image-vcwefef_apqovl.png",
+      },
+      {
+        public_id: "image-product-image-1080x_emiysv.png",
+        url: "https://res.cloudinary.com/dvln3fr4s/image/upload/v1722949390/image-product-image-1080x_emiysv.png",
       },
     ],
     category: "Food",
-    seller: "Kauffman's Fruit Farm & Market",
-    stock: 500,
-    numOfReviews: 1,
+    seller: "Fresh Farms",
+    stock: 120,
+    numOfReviews: 80,
     reviews: [],
   },
 ];
