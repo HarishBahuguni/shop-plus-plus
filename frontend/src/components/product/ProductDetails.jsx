@@ -141,7 +141,7 @@ const ProductDetails = () => {
               type="number"
               className="form-control count d-inline"
               value={quantity}
-              readonly
+              readOnly
             />
             <span className="btn btn-primary plus" onClick={increaseQty}>
               +
