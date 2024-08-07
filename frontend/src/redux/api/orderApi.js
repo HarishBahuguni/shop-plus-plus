@@ -19,7 +19,7 @@ export const orderApi = createApi({
     }),
     orderDetails: builder.query({
       query: (id) => `/orders/${id}`,
-      providesTags: ["Order"],
+      providesTags: ["Order", "AdminOrders"],
     }),
     stripeCheckoutSession: builder.mutation({
       query(body) {
@@ -35,6 +35,7 @@ export const orderApi = createApi({
     }),
     getAdminOrders: builder.query({
       query: () => `/admin/orders`,
+      providesTags: ["AdminOrders"],
     }),
     updateOrder: builder.mutation({
       query({id, body}) {
@@ -45,6 +46,15 @@ export const orderApi = createApi({
         };
       },
       invalidatesTags: ["Order"],
+    }),
+    deleteOrder: builder.mutation({
+      query(id) {
+        return {
+          url: `/admin/orders/${id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["AdminOrders"],
     }),
   }),
 });
@@ -57,4 +67,5 @@ export const {
   useLazyGetDashboardSalesQuery,
   useGetAdminOrdersQuery,
   useUpdateOrderMutation,
+  useDeleteOrderMutation,
 } = orderApi;

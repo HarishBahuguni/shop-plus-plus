@@ -4,19 +4,19 @@ import toast from "react-hot-toast";
 import {Link} from "react-router-dom";
 import {MDBDataTable} from "mdbreact";
 import MetaData from "../layout/MetaData";
-import {
-  useDeleteProductMutation,
-  useGetAdminProductsQuery,
-} from "../../redux/api/productsApi";
 import AdminLayout from "../layout/AdminLayout";
+import {
+  useDeleteUserMutation,
+  useGetAdminUsersQuery,
+} from "../../redux/api/userApi";
 
-const ListProducts = () => {
-  const {data, isLoading, error} = useGetAdminProductsQuery();
+const ListUsers = () => {
+  const {data, isLoading, error} = useGetAdminUsersQuery();
 
   const [
-    deleteProduct,
-    {isLoading: isDeleteLoading, error: deleteError, isSuccess},
-  ] = useDeleteProductMutation();
+    deleteUser,
+    {error: deleteError, isLoading: isDeleteLoading, isSuccess},
+  ] = useDeleteUserMutation();
 
   useEffect(() => {
     if (error) {
@@ -27,16 +27,16 @@ const ListProducts = () => {
     }
 
     if (isSuccess) {
-      toast.success("Product Deleted Successfully");
+      toast.success("User Deleted Successfully");
     }
   }, [error, deleteError, isSuccess]);
 
-  const deleteProductHandler = (id) => {
-    deleteProduct(id);
+  const deleteUserHandler = (id) => {
+    deleteUser(id);
   };
 
-  const setProducts = () => {
-    const products = {
+  const setUsers = () => {
+    const users = {
       columns: [
         {
           label: "ID",
@@ -49,8 +49,13 @@ const ListProducts = () => {
           sort: "asc",
         },
         {
-          label: "Stock",
-          field: "stock",
+          label: "Email",
+          field: "email",
+          sort: "asc",
+        },
+        {
+          label: "Role",
+          field: "role",
           sort: "asc",
         },
         {
@@ -62,26 +67,23 @@ const ListProducts = () => {
       rows: [],
     };
 
-    data?.products?.forEach((product) => {
-      products.rows.push({
-        id: product?._id,
-        name: `${product?.name?.substring(0, 20)}...`,
-        stock: product?.stock,
+    data?.users?.forEach((user) => {
+      users.rows.push({
+        id: user?._id,
+        name: user?.name,
+        email: user?.email,
+        role: user?.role,
         actions: (
           <>
             <Link
-              to={`/admin/products/${product?._id}`}
+              to={`/admin/users/${user?._id}`}
               className="btn btn-outline-primary">
               <i className="fa fa-pencil"></i>
             </Link>
-            <Link
-              to={`/admin/products/${product?._id}/upload_images`}
-              className="btn btn-outline-success ms-2">
-              <i className="fa fa-image"></i>
-            </Link>
+
             <button
               className="btn btn-outline-danger ms-2"
-              onClick={() => deleteProductHandler(product?._id)}
+              onClick={() => deleteUserHandler(user?._id)}
               disabled={isDeleteLoading}>
               <i className="fa fa-trash"></i>
             </button>
@@ -89,25 +91,19 @@ const ListProducts = () => {
         ),
       });
     });
-    return products;
+    return users;
   };
 
   if (isLoading) return <Loader />;
 
   return (
     <AdminLayout>
-      <MetaData title={"All Products"} />
+      <MetaData title={"All Users"} />
 
-      <h1 className="my-2">{data?.products?.length} Products</h1>
-      <MDBDataTable
-        data={setProducts()}
-        className="px-1"
-        bordered
-        striped
-        hover
-      />
+      <h1 className="my-2">{data?.users?.length} Users</h1>
+      <MDBDataTable data={setUsers()} className="px-1" bordered striped hover />
     </AdminLayout>
   );
 };
 
-export default ListProducts;
+export default ListUsers;

@@ -4,7 +4,9 @@ import Product from "../models/product.js";
 
 const seedProducts = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/shopplusplus");
+    await mongoose.connect(
+      "mongodb+srv://harishbahuguni:harishbahuguni@shopplusplus.d0mue.mongodb.net/shop-plus-plus?retryWrites=true&w=majority&appName=shopplusplus"
+    );
 
     await Product.deleteMany();
     console.log("Products are deleted.");

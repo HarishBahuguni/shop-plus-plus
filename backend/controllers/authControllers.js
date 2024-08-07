@@ -60,7 +60,10 @@ export const logoutUser = catchAsyncErrors(async (req, res, next) => {
 
 // Upload user avatar => /api/v1/me/upload_avatar
 export const uploadAvatar = catchAsyncErrors(async (req, res, next) => {
-  const avatarResponse = await upload_file(req.body.avatar, "shopplusplus/avatars");
+  const avatarResponse = await upload_file(
+    req.body.avatar,
+    "shopplusplus/avatars"
+  );
 
   // Remove previous user avatar
   if (req?.user?.avatar?.url) {
@@ -117,7 +120,10 @@ export const forgotPassword = catchAsyncErrors(async (req, res, next) => {
 // Forgot password => /api/v1/password/reset/:token
 export const resetPassword = catchAsyncErrors(async (req, res, next) => {
   // Hash the URL token
-  const resetPasswordToken = crypto.createHash("sha256").update(req.params.token).digest("hex");
+  const resetPasswordToken = crypto
+    .createHash("sha256")
+    .update(req.params.token)
+    .digest("hex");
 
   const user = await User.findOne({
     resetPasswordToken,
@@ -125,7 +131,12 @@ export const resetPassword = catchAsyncErrors(async (req, res, next) => {
   });
 
   if (!user) {
-    return next(new ErrorHandler("Password reset token is Invalid or has been Expired!", 400));
+    return next(
+      new ErrorHandler(
+        "Password reset token is Invalid or has been Expired!",
+        400
+      )
+    );
   }
 
   if (req.body.password !== req.body.confirmPassword) {
@@ -201,7 +212,9 @@ export const getUserDetails = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findById(req.params.id);
 
   if (!user) {
-    return next(new ErrorHandler(`User not found with id: ${req.params.id}`, 404));
+    return next(
+      new ErrorHandler(`User not found with id: ${req.params.id}`, 404)
+    );
   }
 
   res.status(200).json({
@@ -231,10 +244,15 @@ export const deleteUser = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findById(req.params.id);
 
   if (!user) {
-    return next(new ErrorHandler(`User not found with id: ${req.params.id}`, 404));
+    return next(
+      new ErrorHandler(`User not found with id: ${req.params.id}`, 404)
+    );
   }
 
-  // TODO remove user avatar from Cloudinary
+  // Remove user avatar from Cloudinary
+  if (user?.avatar?.public_id) {
+    await delete_file(user?.avatar?.public_id);
+  }
 
   await user.deleteOne();
 

@@ -9,7 +9,11 @@ const ProductItem = ({product, columnSize}) => {
       <div className="card p-3 rounded">
         <img
           className="card-img-top mx-auto"
-          src={product?.images[0] ? product?.images[0]?.url : "/images/default_product.png"}
+          src={
+            product?.images[0]
+              ? product?.images[0]?.url
+              : "/images/default_product.png"
+          }
           alt={product?.name}
         />
         <div className="card-body ps-3 d-flex justify-content-center flex-column">
@@ -31,7 +35,10 @@ const ProductItem = ({product, columnSize}) => {
             </span>
           </div>
           <p className="card-text mt-2">${product?.price}</p>
-          <Link to={`/product/${product?._id}`} id="view_btn" className="btn btn-block">
+          <Link
+            to={`/product/${product?._id}`}
+            id="view_btn"
+            className="btn btn-block">
             View Details
           </Link>
         </div>

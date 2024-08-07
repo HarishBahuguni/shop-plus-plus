@@ -22,7 +22,8 @@ const NewProduct = () => {
 
   const {name, description, price, category, stock, seller} = product;
 
-  const [createProduct, {isLoading, error, isSuccess}] = useCreateProductMutation();
+  const [createProduct, {isLoading, error, isSuccess}] =
+    useCreateProductMutation();
 
   useEffect(() => {
     if (error) {
@@ -48,7 +49,7 @@ const NewProduct = () => {
     <AdminLayout>
       <MetaData title={"Create New Product"} />
       <div className="row wrapper">
-        <div className="col-10 col-lg-10 mt-5 mt-lg-0">
+        <div className="col-10 col-lg-15 mt-5 mt-lg-0">
           <form className="shadow rounded bg-body" onSubmit={submitHandler}>
             <h2 className="mb-4">New Product</h2>
             <div className="mb-3">
@@ -56,7 +57,14 @@ const NewProduct = () => {
                 {" "}
                 Name{" "}
               </label>
-              <input type="text" id="name_field" className="form-control" name="name" value={name} onChange={onChange} />
+              <input
+                type="text"
+                id="name_field"
+                className="form-control"
+                name="name"
+                value={name}
+                onChange={onChange}
+              />
             </div>
 
             <div className="mb-3">
@@ -78,7 +86,14 @@ const NewProduct = () => {
                   {" "}
                   Price{" "}
                 </label>
-                <input type="text" id="price_field" className="form-control" name="price" value={price} onChange={onChange} />
+                <input
+                  type="text"
+                  id="price_field"
+                  className="form-control"
+                  name="price"
+                  value={price}
+                  onChange={onChange}
+                />
               </div>
 
               <div className="mb-3 col">
@@ -86,7 +101,14 @@ const NewProduct = () => {
                   {" "}
                   Stock{" "}
                 </label>
-                <input type="number" id="stock_field" className="form-control" name="stock" value={stock} onChange={onChange} />
+                <input
+                  type="number"
+                  id="stock_field"
+                  className="form-control"
+                  name="stock"
+                  value={stock}
+                  onChange={onChange}
+                />
               </div>
             </div>
             <div className="row">
@@ -95,7 +117,12 @@ const NewProduct = () => {
                   {" "}
                   Category{" "}
                 </label>
-                <select className="form-select" id="category_field" name="category" value={category} onChange={onChange}>
+                <select
+                  className="form-select"
+                  id="category_field"
+                  name="category"
+                  value={category}
+                  onChange={onChange}>
                   {PRODUCT_CATEGORIES?.map((category) => (
                     <option key={category} value={category}>
                       {category}
@@ -108,10 +135,20 @@ const NewProduct = () => {
                   {" "}
                   Seller Name{" "}
                 </label>
-                <input type="text" id="seller_field" className="form-control" name="seller" value={seller} onChange={onChange} />
+                <input
+                  type="text"
+                  id="seller_field"
+                  className="form-control"
+                  name="seller"
+                  value={seller}
+                  onChange={onChange}
+                />
               </div>
             </div>
-            <button type="submit" className="btn w-100 py-2" disabled={isLoading}>
+            <button
+              type="submit"
+              className="btn w-100 py-2"
+              disabled={isLoading}>
               {isLoading ? "Creating.." : "CREATE"}
             </button>
           </form>
