@@ -1,6 +1,6 @@
 # ShopPlusPlus E-Commerce Website
 
-### You can view the live application here - [ShopPlusPlus](https://your-deployment-url.com).
+### You can view the live application here - [ShopPlusPlus](https://shop-plus-plus-okx1.onrender.com).
 
 ## Overview
 
