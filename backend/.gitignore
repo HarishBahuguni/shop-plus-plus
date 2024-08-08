@@ -12,7 +12,7 @@
 /build
 
 # Secret
-backend/config/config.env
+config/config.env
 
 
 # misc
