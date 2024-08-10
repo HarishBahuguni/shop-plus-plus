@@ -79,7 +79,7 @@ This is a capstone project for an e-commerce website built using the MERN stack 
     Navigate back to the `backend` directory and start the server:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 7.  **Run the Frontend Application:**
