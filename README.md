@@ -58,7 +58,7 @@ This is a capstone project for an e-commerce website built using the MERN stack 
     Navigate to the `frontend` directory and install the necessary dependencies:
 
     ```bash
-    cd ../frontend
+    cd frontend
     npm install
     ```
 
@@ -79,7 +79,7 @@ This is a capstone project for an e-commerce website built using the MERN stack 
     Navigate back to the `backend` directory and start the server:
 
     ```bash
-    npm run dev
+    npm start
     ```
 
 7.  **Run the Frontend Application:**
